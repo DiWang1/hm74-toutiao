@@ -6,13 +6,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 导入login组件
 import Login from '../views/login'
+// 导入首页/
+import Home from '../views/home'
 // 3.注册导入Vue对象
 Vue.use(VueRouter)
 // 4.配置路由规则初始化路由对象
 const router = new VueRouter({
   // 配置路由规则
   routes: [
-    { name: 'login', path: '/login', component: Login }
+    { name: 'login', path: '/login', component: Login },
+    { name: 'home', path: '/', component: Home }
   ]
 })
 // 5.挂在到vue实例上,要在这里面导出路由给vue实例
